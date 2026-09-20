@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <!-- =========================
        BASIC SEO
   ========================== -->
+
   <meta charset="UTF-8">
 
   <meta name="viewport"
@@ -13,10 +15,10 @@
   <title>The Magic Codes — Creator Clarity Guide</title>
 
   <meta name="description"
-        content="The Magic Codes is a practical creator clarity guide for people who have too many ideas, too many choices, and don't know what to do next.">
+        content="The Magic Codes is a practical creator clarity guide for creators who have too many ideas, too many choices, and need clarity about what to do next.">
 
   <meta name="keywords"
-        content="creator clarity, creator productivity, content creator guide, creator decision making, creator burnout, too many ideas, content strategy, creator focus, creative productivity, The Magic Codes">
+        content="The Magic Codes, creator clarity, creator productivity, creator guide, content creator guide, creative productivity, creator decision making, content strategy, creator focus, too many ideas, creative clarity">
 
   <meta name="author"
         content="Bappa Chakraborty">
@@ -24,13 +26,17 @@
   <meta name="robots"
         content="index, follow">
 
+
+  <!-- =========================
+       CANONICAL
+  ========================== -->
+
   <link rel="canonical"
         href="https://myaiaassistentevaani.github.io/the-magic-codes-landing-page/">
 
+
   <!-- =========================
        OPEN GRAPH
-       Important for Facebook,
-       WhatsApp, Messenger etc.
   ========================== -->
 
   <meta property="og:type"
@@ -48,14 +54,9 @@
   <meta property="og:image"
         content="https://myaiaassistentevaani.github.io/the-magic-codes-landing-page/The-Magic-Code.jpg">
 
-  <meta property="og:image:width"
-        content="1200">
-
-  <meta property="og:image:height"
-        content="1800">
-
   <meta property="og:image:alt"
         content="The Magic Codes ebook cover">
+
 
   <!-- =========================
        TWITTER / X
@@ -73,6 +74,7 @@
   <meta name="twitter:image"
         content="https://myaiaassistentevaani.github.io/the-magic-codes-landing-page/The-Magic-Code.jpg">
 
+
   <!-- =========================
        FONTS
   ========================== -->
@@ -87,8 +89,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
         rel="stylesheet">
 
+
   <!-- =========================
-       STRUCTURED DATA
+       BOOK SCHEMA
   ========================== -->
 
   <script type="application/ld+json">
@@ -107,10 +110,14 @@
   </script>
 
 
+  <!-- =========================
+       STYLES
+  ========================== -->
+
   <style>
 
     /* =========================================
-       GLOBAL
+       RESET
     ========================================= */
 
     * {
@@ -124,10 +131,17 @@
     }
 
     body {
+      margin: 0;
+      padding: 0;
+
       font-family: "Inter", sans-serif;
+
       background: #080706;
+
       color: #f8f4ec;
+
       line-height: 1.6;
+
       overflow-x: hidden;
     }
 
@@ -142,14 +156,18 @@
 
 
     /* =========================================
-       BACKGROUND EFFECT
+       BACKGROUND
     ========================================= */
 
     body::before {
       content: "";
+
       position: fixed;
+
       inset: 0;
+
       pointer-events: none;
+
       z-index: -1;
 
       background:
@@ -158,12 +176,12 @@
           rgba(214, 143, 39, 0.10),
           transparent 30%
         ),
+
         radial-gradient(
           circle at 80% 60%,
           rgba(255, 174, 56, 0.08),
           transparent 35%
         );
-
     }
 
 
@@ -173,33 +191,46 @@
 
     nav {
       width: 100%;
+
       position: sticky;
+
       top: 0;
+
       z-index: 100;
 
-      background: rgba(8, 7, 6, 0.88);
+      background: rgba(8, 7, 6, 0.94);
+
       backdrop-filter: blur(14px);
 
-      border-bottom: 1px solid rgba(212, 154, 65, 0.18);
+      border-bottom:
+        1px solid rgba(212, 154, 65, 0.18);
     }
 
     .nav-inner {
       max-width: 1180px;
+
       margin: auto;
 
-      padding: 18px 24px;
+      padding: 16px 24px;
 
       display: flex;
+
       justify-content: space-between;
+
       align-items: center;
+
+      gap: 20px;
     }
 
     .logo {
       font-family: "Playfair Display", serif;
+
       font-size: 20px;
+
       font-weight: 700;
 
       color: #f2b85b;
+
       text-decoration: none;
 
       letter-spacing: 1px;
@@ -212,11 +243,13 @@
 
       border-radius: 30px;
 
-      border: 1px solid rgba(241, 181, 85, 0.5);
+      border:
+        1px solid rgba(241, 181, 85, 0.5);
 
       color: #f8d08a;
 
       font-size: 14px;
+
       font-weight: 600;
 
       transition: .25s;
@@ -224,32 +257,33 @@
 
     .nav-btn:hover {
       background: #d89432;
+
       color: #080706;
     }
 
 
     /* =========================================
        HERO
-    ========================================= */
+    ========================================== */
 
     .hero {
-      min-height: 90vh;
-
-      display: grid;
-
-      grid-template-columns:
-        minmax(280px, 0.9fr)
-        minmax(320px, 1.1fr);
-
-      gap: 70px;
-
-      align-items: center;
-
       max-width: 1180px;
 
       margin: auto;
 
-      padding: 80px 24px;
+      min-height: 720px;
+
+      padding: 70px 24px;
+
+      display: grid;
+
+      grid-template-columns:
+        minmax(0, 1fr)
+        minmax(300px, 430px);
+
+      align-items: center;
+
+      gap: 70px;
     }
 
     .hero-content {
@@ -342,7 +376,8 @@
 
       padding: 14px 25px;
 
-      border: 1px solid rgba(240, 194, 108, .4);
+      border:
+        1px solid rgba(240, 194, 108, .4);
 
       color: #e9d8ba;
 
@@ -363,15 +398,25 @@
 
 
     /* =========================================
-       HERO IMAGE
-    ========================================= */
+       HERO COVER IMAGE
+
+       IMPORTANT FIX:
+       The original cover is portrait.
+       We deliberately constrain it.
+    ========================================== */
 
     .hero-image {
+      width: 100%;
+
       display: flex;
 
       justify-content: center;
 
+      align-items: center;
+
       position: relative;
+
+      min-width: 0;
     }
 
     .hero-image::before {
@@ -379,53 +424,72 @@
 
       position: absolute;
 
-      width: 80%;
+      width: 85%;
 
-      height: 80%;
+      height: 70%;
 
       border-radius: 50%;
 
       background:
         radial-gradient(
           circle,
-          rgba(225, 145, 38, .22),
+          rgba(225, 145, 38, .20),
           transparent 70%
         );
 
-      filter: blur(25px);
+      filter: blur(30px);
 
       z-index: -1;
     }
 
     .hero-image img {
-      width: min(480px, 90vw);
+      display: block;
 
-      border-radius: 6px;
+      width: auto;
+
+      height: auto;
+
+      /*
+        Desktop size:
+        never allow the portrait
+        cover to become huge.
+      */
+
+      max-width: 360px;
+
+      max-height: 560px;
+
+      object-fit: contain;
+
+      border-radius: 7px;
 
       box-shadow:
-        0 30px 80px rgba(0,0,0,.65),
-        0 0 70px rgba(221,145,44,.16);
+        0 25px 65px rgba(0,0,0,.70),
+        0 0 55px rgba(221,145,44,.14);
 
-      border: 1px solid rgba(238,187,94,.18);
+      border:
+        1px solid rgba(238,187,94,.18);
     }
 
 
     /* =========================================
        TRUST STRIP
-    ========================================= */
+    ========================================== */
 
     .trust-strip {
       max-width: 1000px;
 
-      margin: 0 auto 80px;
+      margin: 0 auto 60px;
 
       padding: 22px 25px;
 
       text-align: center;
 
-      border-top: 1px solid rgba(226,166,74,.16);
+      border-top:
+        1px solid rgba(226,166,74,.16);
 
-      border-bottom: 1px solid rgba(226,166,74,.16);
+      border-bottom:
+        1px solid rgba(226,166,74,.16);
 
       color: #a9a197;
 
@@ -434,15 +498,15 @@
 
 
     /* =========================================
-       SECTION
-    ========================================= */
+       CONTENT SECTIONS
+    ========================================== */
 
     section.content-section {
       max-width: 1080px;
 
       margin: auto;
 
-      padding: 100px 24px;
+      padding: 90px 24px;
     }
 
     .section-label {
@@ -479,14 +543,14 @@
 
 
     /* =========================================
-       CLARITY CARDS
-    ========================================= */
+       IMAGE CARDS
+    ========================================== */
 
     .cards {
       display: grid;
 
       grid-template-columns:
-        repeat(2, 1fr);
+        repeat(2, minmax(0, 1fr));
 
       gap: 30px;
 
@@ -501,7 +565,8 @@
           rgba(255,255,255,.015)
         );
 
-      border: 1px solid rgba(235,181,92,.15);
+      border:
+        1px solid rgba(235,181,92,.15);
 
       border-radius: 14px;
 
@@ -513,15 +578,22 @@
     .card:hover {
       transform: translateY(-6px);
 
-      border-color: rgba(235,181,92,.35);
+      border-color:
+        rgba(235,181,92,.35);
     }
 
     .card-image {
+      display: block;
+
       width: 100%;
 
-      aspect-ratio: 16 / 9;
+      height: 260px;
 
       object-fit: cover;
+
+      object-position: center;
+
+      background: #111;
     }
 
     .card-content {
@@ -544,14 +616,14 @@
 
 
     /* =========================================
-       FEATURE GRID
-    ========================================= */
+       FEATURES
+    ========================================== */
 
     .feature-grid {
       display: grid;
 
       grid-template-columns:
-        repeat(3, 1fr);
+        repeat(3, minmax(0, 1fr));
 
       gap: 18px;
 
@@ -561,7 +633,8 @@
     .feature {
       padding: 30px 25px;
 
-      border: 1px solid rgba(229,169,75,.14);
+      border:
+        1px solid rgba(229,169,75,.14);
 
       border-radius: 12px;
 
@@ -593,7 +666,7 @@
 
     /* =========================================
        FINAL CTA
-    ========================================= */
+    ========================================== */
 
     .final-cta {
       max-width: 1000px;
@@ -606,7 +679,8 @@
 
       border-radius: 20px;
 
-      border: 1px solid rgba(229,169,75,.2);
+      border:
+        1px solid rgba(229,169,75,.2);
 
       background:
         radial-gradient(
@@ -638,10 +712,11 @@
 
     /* =========================================
        FOOTER
-    ========================================= */
+    ========================================== */
 
     footer {
-      border-top: 1px solid rgba(229,169,75,.12);
+      border-top:
+        1px solid rgba(229,169,75,.12);
 
       padding: 35px 24px;
 
@@ -658,76 +733,268 @@
 
 
     /* =========================================
-       MOBILE
-    ========================================= */
+       TABLET
+    ========================================== */
 
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
 
       .hero {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 330px;
 
-        text-align: center;
+        gap: 35px;
 
-        padding-top: 60px;
-
-        gap: 50px;
-      }
-
-      .hero-content {
-        margin: auto;
-      }
-
-      .hero-description {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .hero-actions {
-        justify-content: center;
-      }
-
-      .hero-image {
-        order: -1;
+        padding:
+          55px 22px;
       }
 
       .hero-image img {
-        width: min(380px, 90vw);
-      }
+        max-width: 300px;
 
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      .feature-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .nav-inner {
-        padding: 15px 18px;
+        max-height: 500px;
       }
 
     }
 
 
-    @media (max-width: 480px) {
+    /* =========================================
+       MOBILE
+    ========================================== */
 
-      h1 {
-        font-size: 50px;
+    @media (max-width: 700px) {
+
+      .nav-inner {
+        padding: 14px 18px;
       }
+
+      .logo {
+        font-size: 18px;
+      }
+
+      .nav-btn {
+        padding: 9px 14px;
+
+        font-size: 13px;
+      }
+
+
+      /*
+        IMPORTANT MOBILE FIX
+
+        The cover is now deliberately
+        kept small enough to leave room
+        for the actual landing-page
+        headline and CTA.
+      */
 
       .hero {
-        padding-left: 18px;
-        padding-right: 18px;
+        display: flex;
+
+        flex-direction: column;
+
+        min-height: auto;
+
+        padding:
+          45px 18px
+          65px;
+
+        gap: 38px;
+
+        text-align: center;
       }
 
-      section.content-section {
-        padding: 75px 18px;
+
+      /*
+        Image comes first on mobile,
+        but is tightly constrained.
+      */
+
+      .hero-image {
+        order: -1;
+
+        width: 100%;
+
+        height: auto;
+
+        min-height: 0;
+
+        max-height: none;
+
+        padding: 0;
+      }
+
+      .hero-image img {
+
+        /*
+          THIS is the key setting.
+        */
+
+        width: auto;
+
+        height: auto;
+
+        max-width: 250px;
+
+        max-height: 390px;
+
+        object-fit: contain;
+
+        border-radius: 6px;
+
+        box-shadow:
+          0 20px 45px rgba(0,0,0,.65);
+      }
+
+      .hero-image::before {
+        width: 70%;
+
+        height: 75%;
+
+        filter: blur(22px);
+      }
+
+
+      .hero-content {
+        width: 100%;
+
+        max-width: 600px;
+
+        margin: 0 auto;
+      }
+
+      .eyebrow {
+        font-size: 11px;
+
+        letter-spacing: 2px;
+
+        margin-bottom: 15px;
+      }
+
+      h1 {
+        font-size: 48px;
+
+        margin-bottom: 22px;
+      }
+
+      .hero-description {
+        font-size: 16px;
+
+        margin-bottom: 28px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+
+        width: 100%;
+
+        max-width: 360px;
+
+        margin: auto;
       }
 
       .primary-btn,
       .secondary-btn {
         width: 100%;
+
         text-align: center;
+      }
+
+
+      .trust-strip {
+        margin:
+          0 18px
+          50px;
+
+        padding:
+          18px 15px;
+
+        font-size: 13px;
+      }
+
+
+      section.content-section {
+        padding:
+          70px 18px;
+      }
+
+
+      .cards {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+
+        margin-top: 40px;
+      }
+
+
+      .card-image {
+        height: 230px;
+      }
+
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+      }
+
+
+      .final-cta {
+        margin:
+          30px 18px
+          70px;
+
+        padding:
+          55px 20px;
+      }
+
+    }
+
+
+    /* =========================================
+       SMALL PHONES
+    ========================================== */
+
+    @media (max-width: 390px) {
+
+      .hero {
+        padding-top: 35px;
+      }
+
+      .hero-image img {
+        max-width: 220px;
+
+        max-height: 345px;
+      }
+
+      h1 {
+        font-size: 43px;
+      }
+
+      .hero-description {
+        font-size: 15px;
+      }
+
+      .card-image {
+        height: 210px;
+      }
+
+    }
+
+
+    /* =========================================
+       VERY SMALL PHONES
+    ========================================== */
+
+    @media (max-width: 340px) {
+
+      .hero-image img {
+        max-width: 200px;
+
+        max-height: 315px;
+      }
+
+      h1 {
+        font-size: 39px;
       }
 
     }
@@ -753,9 +1020,14 @@
         THE MAGIC CODES
       </a>
 
-      <a href="#buy"
-         class="nav-btn">
+      <a
+        href="https://evaani.gumroad.com/l/themagiccodes"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="nav-btn">
+
         Get the Guide
+
       </a>
 
     </div>
@@ -764,12 +1036,22 @@
 
 
   <!-- =====================================
-       HERO
+       MAIN
   ====================================== -->
 
   <main id="top">
 
+
+    <!-- =====================================
+         HERO
+    ====================================== -->
+
     <section class="hero">
+
+
+      <!-- =================================
+           HERO TEXT
+      ================================== -->
 
       <div class="hero-content">
 
@@ -777,62 +1059,82 @@
           Creator Clarity Series
         </div>
 
+
         <h1>
+
           THE
-          <span>MAGIC</span>
+
+          <span>
+            MAGIC
+          </span>
+
           CODES
+
         </h1>
 
+
         <p class="hero-description">
+
           How creators decide what to do next
           when everything feels possible.
+
         </p>
 
+
         <div class="hero-actions">
+
 
           <a
             href="https://evaani.gumroad.com/l/themagiccodes"
             target="_blank"
             rel="noopener noreferrer"
             class="primary-btn">
+
             Get The Magic Codes
+
           </a>
+
 
           <a
             href="#inside"
             class="secondary-btn">
+
             Read What's Inside
+
           </a>
+
 
         </div>
 
       </div>
 
 
-      <!-- IMPORTANT:
-           Exact filename from GitHub repository
-      -->
+      <!-- =================================
+           HERO COVER
+           
+           EXACT GITHUB FILE
+      ================================== -->
 
       <div class="hero-image">
 
         <img
-          src="./The-Magic-Code.jpg"
+          src="https://raw.githubusercontent.com/MyAIAssistentevaani/the-magic-codes-landing-page/main/The-Magic-Code.jpg"
           alt="The Magic Codes ebook cover"
           width="1200"
           height="1800"
           loading="eager"
           fetchpriority="high"
           decoding="async"
-          onerror="this.style.display='none'; this.parentElement.innerHTML='<p style=&quot;color:#e5a344;text-align:center&quot;>The-Magic-Code.jpg could not be loaded. Check the filename in GitHub.</p>';"
         >
 
       </div>
+
 
     </section>
 
 
     <!-- =====================================
-         TRUST
+         TRUST STRIP
     ====================================== -->
 
     <div class="trust-strip">
@@ -845,29 +1147,35 @@
 
 
     <!-- =====================================
-         PROBLEM
+         PROBLEM SECTION
     ====================================== -->
 
     <section class="content-section">
+
 
       <div class="section-label">
         The Creator Problem
       </div>
 
+
       <h2 class="section-title">
+
         When every idea feels like
         the right idea.
+
       </h2>
+
 
       <p class="section-text">
 
         Creators rarely run out of ideas.
-        The harder problem is deciding which
-        idea deserves your attention now.
+
+        The harder problem is deciding
+        which idea deserves your attention now.
 
         <br><br>
 
-        The Magic Codes explores a simple
+        The Magic Codes explores a practical
         framework for creating clarity when
         you have too many possibilities,
         too many directions and too many
@@ -876,19 +1184,26 @@
       </p>
 
 
-      <!-- IMAGE 2 -->
+      <!-- =================================
+           TWO IMAGE CARDS
+      ================================== -->
 
       <div class="cards">
 
+
+        <!-- CARD 1 -->
+
         <article class="card">
 
+
           <img
-            src="./decision-clarity-hero.png"
+            src="https://raw.githubusercontent.com/MyAIAssistentevaani/the-magic-codes-landing-page/main/decision-clarity-hero.png"
             alt="Decision clarity for creators"
             class="card-image"
             loading="lazy"
             decoding="async"
           >
+
 
           <div class="card-content">
 
@@ -896,11 +1211,14 @@
               Decision Clarity
             </h3>
 
+
             <p>
+
               Learn how to move from
               endless thinking to a clear
               next step without needing
               every answer first.
+
             </p>
 
           </div>
@@ -908,17 +1226,19 @@
         </article>
 
 
-        <!-- IMAGE 3 -->
+        <!-- CARD 2 -->
 
         <article class="card">
 
+
           <img
-            src="./too-many-choices.jpg"
+            src="https://raw.githubusercontent.com/MyAIAssistentevaani/the-magic-codes-landing-page/main/too-many-choices.jpg"
             alt="Too many choices for creators"
             class="card-image"
             loading="lazy"
             decoding="async"
           >
+
 
           <div class="card-content">
 
@@ -926,16 +1246,20 @@
               Too Many Choices
             </h3>
 
+
             <p>
+
               Understand why having more
               possibilities can sometimes
               make it harder to choose
               what to do next.
+
             </p>
 
           </div>
 
         </article>
+
 
       </div>
 
@@ -943,21 +1267,26 @@
 
 
     <!-- =====================================
-         INSIDE THE BOOK
+         INSIDE THE GUIDE
     ====================================== -->
 
     <section
       class="content-section"
       id="inside">
 
+
       <div class="section-label">
         Inside The Guide
       </div>
 
+
       <h2 class="section-title">
+
         Turn creative possibilities
         into deliberate action.
+
       </h2>
+
 
       <p class="section-text">
 
@@ -969,7 +1298,12 @@
       </p>
 
 
+      <!-- =================================
+           FEATURES
+      ================================== -->
+
       <div class="feature-grid">
+
 
         <div class="feature">
 
@@ -1080,22 +1414,25 @@
 
         </div>
 
+
       </div>
 
     </section>
 
 
     <!-- =====================================
-         CTA
+         FINAL CTA
     ====================================== -->
 
     <section
       class="final-cta"
       id="buy">
 
+
       <h2>
         What will you create next?
       </h2>
+
 
       <p>
 
@@ -1107,6 +1444,7 @@
 
       </p>
 
+
       <a
         href="https://evaani.gumroad.com/l/themagiccodes"
         target="_blank"
@@ -1117,7 +1455,9 @@
 
       </a>
 
+
     </section>
+
 
   </main>
 
@@ -1129,43 +1469,16 @@
   <footer>
 
     © 2026
-    <strong>Bappa Chakraborty</strong>.
+
+    <strong>
+      Bappa Chakraborty
+    </strong>.
+
     The Magic Codes.
 
   </footer>
 
 
-  <!-- =====================================
-       IMAGE DEBUGGING
-       Helps detect missing files
-  ====================================== -->
-
-  <script>
-
-    document.querySelectorAll("img").forEach(function(img) {
-
-      img.addEventListener("error", function() {
-
-        console.error(
-          "IMAGE FAILED TO LOAD:",
-          img.getAttribute("src")
-        );
-
-      });
-
-      img.addEventListener("load", function() {
-
-        console.log(
-          "IMAGE LOADED:",
-          img.getAttribute("src")
-        );
-
-      });
-
-    });
-
-  </script>
-
-
 </body>
+
 </html>
